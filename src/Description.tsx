@@ -1,4 +1,5 @@
 import * as React from 'react';
+// import { withNamespaces } from 'react-i18next';
 
 interface IProps {
     countBy?: number;
@@ -8,7 +9,9 @@ interface IState {
     count: number;
 }
 
+// @withNamespaces()
 class Description extends React.Component<IProps, IState> {
+
     public static defaultProps: Partial<IProps> = {
         countBy: 1,
     };
